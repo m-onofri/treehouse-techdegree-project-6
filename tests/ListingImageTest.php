@@ -5,10 +5,11 @@
  * Date: 2019-02-01
  * Time: 14:17
  */
-require __DIR__ .'/../classes/ListingBasic.php';
+// require __DIR__ .'/../inc/config.php';
+// require_once __DIR__ .'/../classes/ListingBasic.php';
 
 use PHPUnit\Framework\TestCase;
-
+ 
 class ListingImageTest extends TestCase
 {
     public function testNoImage()

@@ -8,7 +8,7 @@ include __DIR__ . '/../classes/ListingBasic.php';
 include __DIR__ . '/../classes/ListingPremium.php';
 include __DIR__ . '/../classes/ListingInactive.php';
 include __DIR__ . '/../classes/ListingFeatured.php';
-
+ 
 try {
     //create PDO connection
     $db = new PDO("sqlite:".__DIR__."/database.db");

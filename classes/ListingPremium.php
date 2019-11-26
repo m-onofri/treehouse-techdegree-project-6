@@ -15,7 +15,7 @@ class ListingPremium extends ListingBasic
         if (isset($data['description'])) {
             $this->setDescription($data['description']);
         }
-    }
+    } 
     
     /**
      * Gets the local property $description

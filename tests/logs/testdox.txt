@@ -1,0 +1,22 @@
+Listing Basic
+ [x] Listing basic must be instantiate with valid data
+ [x] Set values must receive data with id
+ [x] Set values must receive data with title
+ [x] Listing basic instantiate an object
+ [x] Get status returns basic by default
+ [x] Get methods return the expected results
+ [x] To array returns array with expected results
+
+Listing Featured
+ [x] Get status returns featured by default
+ [x] Get coc returns the expected results
+
+Listing Image
+ [x] No image
+ [x] Full path image
+ [x] Build path image
+
+Listing Premium
+ [x] Get status returns premium by default
+ [x] Get description returns the expected results
+
