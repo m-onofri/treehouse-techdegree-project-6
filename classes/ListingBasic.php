@@ -140,7 +140,7 @@ class ListingBasic
     }
 
     /**
-     * Cleans up and sets the local property $image
+     * Sets the local property $image
      * @param string $value to set property
      */
     public function setImage($value)

@@ -11,6 +11,8 @@ use PHPUnit\Framework\TestCase;
 
 class ListingPremiumTest extends TestCase
 {
+    //Write a test for the ListingPremium class to ensure that getStatus method returns 'premium'.
+
     /** @test */
     public function getStatusReturnsPremiumByDefault()
     {
@@ -21,6 +23,8 @@ class ListingPremiumTest extends TestCase
         $listing = new ListingPremium($data);
         $this->assertEquals('premium', $listing->getStatus());
     }
+
+    //Write a test for the ListingPremium class to ensure that getDescription method returns the expected results.
 
     /** @test */
     public function getDescriptionReturnsTheExpectedResults()

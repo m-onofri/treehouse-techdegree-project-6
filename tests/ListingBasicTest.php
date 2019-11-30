@@ -10,6 +10,8 @@ use PHPUnit\Framework\TestCase;
 
 class ListingBasicTest extends TestCase
 {
+    //Write tests for the ListingBasic class to ensure that all three Exception messages are returned as expected.
+    
     /** @test */
     public function listingBasicMustBeInstantiateWithValidData()
     {
@@ -35,6 +37,8 @@ class ListingBasicTest extends TestCase
         $recipe = new ListingBasic($data);
     }
 
+    //Write a test for the ListingBasic class to ensure that an Object is created when passing the minimum, id and title.
+
     /** @test */
     public function listingBasicInstantiateAnObject()
     {
@@ -44,6 +48,8 @@ class ListingBasicTest extends TestCase
         ];
         $this->assertIsObject(new ListingBasic($data));
     }
+
+    //Write a test for the ListingBasic class to ensure that getStatus method returns 'basic'.
 
     /** @test */
     public function getStatusReturnsBasicByDefault()
@@ -55,6 +61,8 @@ class ListingBasicTest extends TestCase
         $listing = new ListingBasic($data);
         $this->assertEquals('basic', $listing->getStatus());
     }
+
+    //Write a test for the ListingBasic class to ensure that the get method for each property is returning the expected results: id, title, website, email, twitter.
 
     /** @test */
     public function getMethodsReturnTheExpectedResults()
@@ -73,6 +81,8 @@ class ListingBasicTest extends TestCase
         $this->assertEquals("myemail@mail.com", $listing->getEmail(), 'getEmail doesn\'t return the expected value');
         $this->assertEquals('example', $listing->getTwitter(), 'getTwitter doesn\'t return the expected value');
     }
+
+    //Write a test for the ListingBasic class to ensure that the toArray method returns an array where each item equals the expected results: id, title, website, email, twitter.
 
     /** @test */
     public function toArrayReturnsArrayWithExpectedResults()
@@ -95,8 +105,6 @@ class ListingBasicTest extends TestCase
                                 'image' => null
                             ], $listing->toArray());
     }
-
-    
 }
 
 
