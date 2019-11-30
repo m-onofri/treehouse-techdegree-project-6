@@ -4,7 +4,11 @@ Listing Basic
  [x] Set values must receive data with title
  [x] Listing basic instantiate an object
  [x] Get status returns basic by default
- [x] Get methods return the expected results
+ [x] Get methods return the expected id
+ [x] Get methods return the expected title
+ [x] Get methods return the expected website
+ [x] Get methods return the expected twitter
+ [x] Get methods return the expected email
  [x] To array returns array with expected results
 
 Listing Featured

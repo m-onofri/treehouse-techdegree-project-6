@@ -65,7 +65,7 @@ class ListingBasicTest extends TestCase
     //Write a test for the ListingBasic class to ensure that the get method for each property is returning the expected results: id, title, website, email, twitter.
 
     /** @test */
-    public function getMethodsReturnTheExpectedResults()
+    public function getMethodsReturnTheExpectedId()
     {
         $data = [
             'title' => 'New Title',
@@ -76,10 +76,62 @@ class ListingBasicTest extends TestCase
         ];
         $listing = new ListingBasic($data);
         $this->assertEquals(0, $listing->getId(), 'getId doesn\'t return the expected value');
+    }
+
+    /** @test */
+    public function getMethodsReturnTheExpectedTitle()
+    {
+        $data = [
+            'title' => 'New Title',
+            'id' => 0,
+            'website' => 'mywebsite.com',
+            'email' => 'myemail@mail.com',
+            'twitter' => '@example'
+        ];
+        $listing = new ListingBasic($data);
         $this->assertEquals("New Title", $listing->getTitle(), 'getTitle doesn\'t return the expected value');
+    }
+
+    /** @test */
+    public function getMethodsReturnTheExpectedWebsite()
+    {
+        $data = [
+            'title' => 'New Title',
+            'id' => 0,
+            'website' => 'mywebsite.com',
+            'email' => 'myemail@mail.com',
+            'twitter' => '@example'
+        ];
+        $listing = new ListingBasic($data);
         $this->assertEquals("http://mywebsite.com", $listing->getWebsite(), 'getWebsite doesn\'t return the expected value');
-        $this->assertEquals("myemail@mail.com", $listing->getEmail(), 'getEmail doesn\'t return the expected value');
+    }
+
+    /** @test */
+    public function getMethodsReturnTheExpectedTwitter()
+    {
+        $data = [
+            'title' => 'New Title',
+            'id' => 0,
+            'website' => 'mywebsite.com',
+            'email' => 'myemail@mail.com',
+            'twitter' => '@example'
+        ];
+        $listing = new ListingBasic($data);
         $this->assertEquals('example', $listing->getTwitter(), 'getTwitter doesn\'t return the expected value');
+    }
+
+    /** @test */
+    public function getMethodsReturnTheExpectedEmail()
+    {
+        $data = [
+            'title' => 'New Title',
+            'id' => 0,
+            'website' => 'mywebsite.com',
+            'email' => 'myemail@mail.com',
+            'twitter' => '@example'
+        ];
+        $listing = new ListingBasic($data);
+        $this->assertEquals("myemail@mail.com", $listing->getEmail(), 'getEmail doesn\'t return the expected value');
     }
 
     //Write a test for the ListingBasic class to ensure that the toArray method returns an array where each item equals the expected results: id, title, website, email, twitter.
