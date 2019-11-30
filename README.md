@@ -20,7 +20,7 @@ Run the server to give a look to the project
 php -S localhost:4000
 ```
 
-In your browser, go to http://localhost:4000/ and see the blog.
+In your browser, go to http://localhost:4000/ and see the app.
 
 To run the tests, run in your terminal
 ```
